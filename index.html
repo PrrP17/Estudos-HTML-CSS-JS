@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="screen">
+    <script src="src/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <div>
+        <h1 id="titulo">Cadastro de Devs</h1>
+        <p id="subtitulo">complete sua informações</p>
+        <br>
+    </div>
+
+    <!--Formulário-->
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for=""><strong>Você desenvolve Backend/Frontend/Fullstack?</strong></label>
+            <label for="">
+                <input type="radio" name="devweb" id="devweb" value="frontend" checked>Front-end
+            </label>
+            <label for="">
+                <input type="radio" name="devweb1" id="devewb" value="backend">Back-end
+            </label>
+            <label for="">
+                <input type="radio" name="devweb2" id="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select name="" id="senioridade">
+                <option value=""selected disabled>----</option>
+                <option value="">Junior</option>
+                <option value="">Pleno</option>
+                <option value="">Senior</option>
+            </select>
+        </div>
+
+        <fieldset id="grupo">
+            <div id="check">
+                <label for=""><strong>Quais tecnologias você domina? </strong></label><br><br>
+
+                <input type="checkbox" name="tech1" id="tech1" value="HTML">
+                <label for="tech1">HTML</label>
+
+                <input type="checkbox" name="tech2" id="tech2" value="CSS">
+                <label for="tech2">CSS</label>
+
+                <input type="checkbox" name="tech3" id="tech3" value="JavaScript">
+                <label for="tech3">JavaScript</label>
+
+                <input type="checkbox" name="tech4" id="tech4" value="React">
+                <label for="tech4">React</label>
+
+                <input type="checkbox" name="tech5" id="tech5" value="PHP">
+                <label for="tech5">PHP</label>
+
+                <input type="checkbox" name="tech6" id="tech6" value="NODE">
+                <label for="tech6">NODE</label>
+
+                <input type="checkbox" name="tech7" id="tech7" value="VUE">
+                <label for="tech7">VUE</label>
+
+                <input type="checkbox" name="tech8" id="tech8" value="JAVA">
+                <label for="tech8">JAVA</label>
+
+                <input type="checkbox" name="tech9" id="tech9"  value="Django">
+                <label for="tech9">Django</label>
+
+                <input type="checkbox" name="tech10" id="tech10" value="python">
+                <label for="tech10">Python</label>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label for=""><strong>Contenos sobre você: </strong></label>
+                <textarea name="xp" id="xp" rows="5" style="width: 26em"></textarea>
+            </div>
+        </fieldset>
+
+
+        <script>enviar()</script>
+        <button class="button" type="submit" id="envia">Concluir</button>
+        
+    </form>
+</body>
+</html>
